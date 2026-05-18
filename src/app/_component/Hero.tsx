@@ -37,7 +37,9 @@ export default function Hero() {
 
             <Button asChild variant="link" className="rounded-full bg-[#65d196] text-[#4D0000] font-bold px-8 py-3 min-h-13.5 shadow-[0_10px_24px_rgba(0,0,0,0.08)] 
             hover:!bg-[#1fc43a] hover:!text-white transition-colors duration-200 ease-in-out">
-              <a href="wa.me/5521991855891?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer">
+              <a 
+                href={`https://wa.me/5521991855891?text=Olá vim pelo site e gostaria de mais informações sobre consulta.`}
+                 target="_blank" rel="noopener noreferrer">
                 <WhatsappLogoIcon className="size-7" /> Fale conosco via WhatsApp
               </a>
             </Button>
