@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E8C;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#D946A6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#5B8DEE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0EA5E9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Brain main shape -->
+  <g fill="url(#brainGradient)">
+    <!-- Left lobe (larger) -->
+    <path d="M 80 120 Q 50 100 40 140 Q 35 180 80 200 Q 110 210 120 170 Q 125 140 110 120 Z" />
+    
+    <!-- Center-left -->
+    <path d="M 110 120 Q 100 110 120 100 Q 140 95 150 120 Q 155 145 140 160 Q 125 155 120 140 Z" />
+    
+    <!-- Center -->
+    <path d="M 150 100 Q 170 85 200 80 Q 230 85 250 100 Q 260 120 250 150 Q 200 160 150 150 Z" />
+    
+    <!-- Center-right -->
+    <path d="M 250 100 Q 270 110 280 130 Q 290 150 270 165 Q 250 155 245 135 Z" />
+    
+    <!-- Right lobe (larger) -->
+    <path d="M 280 130 Q 310 120 330 140 Q 360 170 340 210 Q 300 220 270 190 Q 280 160 280 130 Z" />
+    
+    <!-- Bottom center lobe -->
+    <path d="M 180 160 Q 200 175 200 200 Q 180 210 160 195 Q 170 180 180 160 Z" />
+  </g>
+  
+  <!-- Brain folds/sulci (white lines) -->
+  <g stroke="white" stroke-width="5" fill="none" stroke-linecap="round">
+    <!-- Left side folds -->
+    <path d="M 70 115 Q 85 125 95 110" />
+    <path d="M 75 140 Q 90 150 100 140" />
+    <path d="M 70 165 Q 85 170 95 165" />
+    
+    <!-- Top center folds -->
+    <path d="M 140 95 Q 160 88 180 92" />
+    <path d="M 170 90 Q 190 85 210 90" />
+    <path d="M 200 88 Q 220 85 240 92" />
+    
+    <!-- Center folds -->
+    <path d="M 145 120 Q 165 130 185 125" />
+    <path d="M 160 140 Q 180 148 200 143" />
+    <path d="M 175 155 Q 195 163 215 158" />
+    
+    <!-- Right side folds -->
+    <path d="M 265 110 Q 285 115 300 105" />
+    <path d="M 270 140 Q 290 148 310 140" />
+    <path d="M 280 165 Q 300 170 320 165" />
+  </g>
+</svg>
