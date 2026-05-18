@@ -3,7 +3,8 @@ import Link from "next/link";
 import DrAlineHero from "../../../public/images/draline-hero.jpg";
 import { Button } from "../../components/ui/button";
 import { Check } from "lucide-react";
-// import { WhatsappLogo } from "@phosphor-icons/react";
+import { WhatsappLogoIcon } from "@phosphor-icons/react/dist/ssr";
+
 
 export default function Hero() {
   return (
@@ -15,6 +16,7 @@ export default function Hero() {
         </div>
 
       </header>
+      
 
       <main className="grid grid-cols-1 md:[grid-template-columns:1.05fr_0.95fr] gap-y-10 md:gap-[72px] items-center">
         <div className="hero-copy">
@@ -28,12 +30,16 @@ export default function Hero() {
           </p>
 
           <div className="actions flex flex-wrap items-center gap-4 md:gap-6 mb-8">
-            <Button asChild className="rounded-full bg-[#D1B5E8] text-[#4D0000] font-bold px-8 py-3 min-h-[54px] shadow-[0_10px_24px_rgba(0,0,0,0.08)] hover:!bg-[#7C3AED] hover:!text-white transition-colors duration-200 ease-in-out">
-              <Link href="#contato">Agende consulta</Link>
+            <Button asChild className="rounded-full bg-[#D1B5E8] text-[#4D0000] font-bold px-8 py-3 min-h-13.5 shadow-[0_10px_24px_rgba(0,0,0,0.08)] 
+            hover:!bg-[#7C3AED] hover:!text-white transition-colors duration-200 ease-in-out">
+              <a href="https://www.doctoralia.com.br/z/pi6kHv">Agende consulta</a>
             </Button>
 
-            <Button asChild variant="link" className="text-teal-700 font-bold">
-              <a href="https://wa.me/5500000000000">Fale conosco via WhatsApp</a>
+            <Button asChild variant="link" className="rounded-full bg-[#65d196] text-[#4D0000] font-bold px-8 py-3 min-h-13.5 shadow-[0_10px_24px_rgba(0,0,0,0.08)] 
+            hover:!bg-[#1fc43a] hover:!text-white transition-colors duration-200 ease-in-out">
+              <a href="wa.me/5521991855891" target="_blank" rel="noopener noreferrer">
+                <WhatsappLogoIcon className="size-7" /> Fale conosco via WhatsApp
+              </a>
             </Button>
           </div>
 
@@ -44,8 +50,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="image-area relative flex justify-center md:justify-end order-first md:order-none">
-          <div className="portrait relative w-[min(420px,100%)] aspect-[4/5] rounded-[40px] bg-transparent overflow-hidden shadow-none">
+        <div className="image-area relative flex justify-center md:justify-end order-first md:order-0">
+          <div className="portrait relative w-[min(420px,100%)] aspect-4/5 rounded-[40px] bg-transparent overflow-hidden shadow-none">
             {/* Preserve the original Image import and tag */}
             <Image
               src={DrAlineHero}
@@ -55,7 +61,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="quote-card hidden md:block absolute left-0 bottom-8 -translate-x-[18%] max-w-[260px] bg-psi-surface/90 backdrop-blur-md rounded-[24px] p-5 shadow-[0_18px_45px_rgba(45,69,70,0.13)] font-serif text-psi-main text-[1.05rem] leading-7">
+          <div className="quote-card hidden md:block absolute left-0 bottom-8 translate-x-[-18%] max-w-65 bg-psi-surface/90 backdrop-blur-md rounded-[24px] p-5 shadow-[0_18px_45px_rgba(45,69,70,0.13)] font-serif text-psi-main text-[1.05rem] leading-7">
             Você não precisa enfrentar tudo sozinho.
           </div>
 
