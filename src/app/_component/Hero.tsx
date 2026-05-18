@@ -10,18 +10,22 @@ export default function Hero() {
   return (
     <section className="h-auto md:h-screen bg-white text-gray-900 flex flex-col justify-center overflow-hidden">
       <div className="w-full max-w-6xl mx-auto px-6 md:px-12 py-8 md:py-0 flex flex-col justify-center h-full">
-        <header className="flex items-center justify-between mb-12 md:mb-16">
+        <header className="flex items-center justify-between mb-8 md:mb-10">
           <div className="brand">
             <strong className="block text-base text-gray-900">Dra. Aline Roque Batista</strong>
             <span className="text-sm text-gray-500">Psiquiatria • CRM 520108027-0/RJ</span>
           </div>
-
         </header>
 
+        {/* Destaque fixo no topo — sempre visível acima do grid */}
+        <div className="mb-6 md:mb-8 text-center">
+          <span className="font-serif text-[#4D0000] font-bold text-[clamp(2.4rem,4vw,4rem)] leading-tight tracking-tight">
+            Psiquiatria humanizada
+          </span>
+        </div>
 
         <main className="grid grid-cols-1 md:[grid-template-columns:1.05fr_0.95fr] gap-y-10 md:gap-[72px] items-center">
           <div className="hero-copy">
-            <p className="eyebrow text-[#4D0000] text-sm font-extrabold uppercase tracking-wider mb-6">Psiquiatria humanizada</p>
             <h1 className="font-serif text-[clamp(2.8rem,5.5vw,5.4rem)] leading-[1.02] -tracking-[0.05em] text-[#4D0000] max-w-[760px] mb-7">
               Saúde mental com escuta, cuidado e direção.
             </h1>
@@ -54,18 +58,19 @@ export default function Hero() {
           </div>
 
           <div className="image-area flex flex-col items-center md:items-end order-first md:order-0">
-            <div className="w-[min(420px,100%)] mb-4 md:mb-0 md:mt-4 font-serif text-center order-first md:order-last">
-              <span className="inline-block text-[#4D0000] font-bold text-[clamp(2rem,4vw,2.8rem)] px-6 py-3 leading-snug">
-                Você não precisa passar por isso sozinho
-              </span>
-            </div>
-            <div className="portrait relative w-[min(420px,100%)] aspect-4/5 rounded-[40px] bg-transparent overflow-hidden shadow-none order-last md:order-first">
+            <div className="portrait relative w-[min(420px,100%)] aspect-4/5 rounded-[40px] bg-transparent overflow-hidden shadow-none">
               <Image
                 src={DrAlineHero}
                 alt="Foto da Aline Hero"
                 className="w-full h-full object-cover block"
                 priority
               />
+            </div>
+            {/* Quote secundária abaixo da imagem */}
+            <div className="w-[min(420px,100%)] mt-4 font-serif text-center md:text-right">
+              <span className="inline-block text-gray-500 italic text-base md:text-lg px-4 py-2 leading-snug">
+                "Cada história merece ser compreendida com profundidade, cuidado e responsabilidade clínica."
+              </span>
             </div>
           </div>
         </main>
