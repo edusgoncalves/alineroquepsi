@@ -88,6 +88,8 @@ export default function Hero() {
                 alt="Foto da Dra. Aline Roque"
                 className="w-full h-full object-cover block"
                 priority
+                data-aos="fade-down-left"
+                data-aos-delay="100"
               />
             </div>
             {/* Quote secundária abaixo da imagem */}

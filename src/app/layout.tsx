@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { AosInit } from "./_component/aos-init";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full overflow-x-hidden antialiased`}
     >
       <body className="h-full overflow-x-hidden">
+        <AosInit />
         {children}
       </body>
     </html>
