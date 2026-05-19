@@ -30,9 +30,9 @@ export default function Hero() {
           </span>
         </div>
 
-        <main className="grid grid-cols-1 md:[grid-template-columns:1.05fr_0.95fr] gap-y-10 md:gap-[72px] items-center">
+        <main className="grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] gap-y-10 md:gap-[72px] items-center">
           <div className="hero-copy">
-            <h1 className="font-serif text-[clamp(2.8rem,5.5vw,5.4rem)] leading-[1.02] -tracking-[0.05em] text-[#5A0012] max-w-[760px] mb-7">
+            <h1 className="font-serif text-[clamp(2.8rem,5.5vw,5.4rem)] leading-[1.02] tracking-tighter text-[#5A0012] max-w-[760px] mb-7">
               Saúde mental com escuta, cuidado e direção.
             </h1>
             <p className="subtitle text-[#6F5F66] text-base md:text-lg leading-7 max-w-[580px] mb-9">
@@ -45,7 +45,7 @@ export default function Hero() {
               <Button
                 asChild
                 className="rounded-full bg-[#5A0012] text-white font-semibold px-8 py-3 min-h-[54px] shadow-[0_10px_28px_rgba(90,0,18,0.18)]
-                  hover:!bg-[#7A2030] hover:!text-white transition-colors duration-200 ease-in-out"
+                  hover:bg-[#7A2030]! hover:text-white! transition-colors duration-200 ease-in-out"
               >
                 <a href="https://www.doctoralia.com.br/z/pi6kHv">Agende consulta</a>
               </Button>
