@@ -20,7 +20,7 @@ export default function Hero() {
         {/* Destaque fixo no topo — sempre visível acima do grid */}
         <div className="mb-6 md:mb-8 text-center">
           <span className="font-serif text-[#4D0000] font-bold text-[clamp(2.4rem,4vw,4rem)] leading-tight tracking-tight">
-            Psiquiatria humanizada
+            Atendimento psiquiátrico humanizado
           </span>
         </div>
 
