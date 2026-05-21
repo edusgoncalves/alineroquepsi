@@ -21,7 +21,10 @@ export const metadata: Metadata = {
     ],
     locale: 'pt_BR',
     type: 'website',
-  }
+  },
+  facebook: {
+    appId: '123456789012345',
+  },
 };
 
 const geistSans = Geist({
