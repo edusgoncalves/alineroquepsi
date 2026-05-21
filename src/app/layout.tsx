@@ -11,15 +11,7 @@ export const metadata: Metadata = {
     description: 'Atendimento psiquiátrico...',
     url: 'https://www.dralineroquepsiq.com.br/',
     siteName: 'Dra Aline Roque - Psiquiatria Humanizada',
-    images: [
-      {
-        // Forçando a URL absoluta direta sem passar pelo otimizador do Next
-        url: 'https://www.dralineroquepsiq.com.br/images/opengraph-image.jpg',
-        width: 1193,
-        height: 630,
-        alt: 'Dra. Aline Roque - Psiquiatria',
-      },
-    ],
+    images: ['https://www.dralineroquepsiq.com.br/images/opengraph-image.jpg'],
     locale: 'pt_BR',
     type: 'website',
   },
