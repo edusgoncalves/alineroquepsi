@@ -11,20 +11,9 @@ export const metadata: Metadata = {
     description: 'Atendimento psiquiátrico humanizado e acolhedor. Consultas presenciais e online focadas no seu bem-estar emocional e equilíbrio.',
     url: 'https://www.dralineroquepsiq.com.br/',
     siteName: 'Dra Aline Roque - Psiquiatria Humanizada',
-    images: [
-      {
-        url: 'https://www.dralineroquepsiq.com.br/images/banner.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Dra. Aline Roque - Consultas Online e Presenciais',
-      },
-    ],
     locale: 'pt_BR',
     type: 'website',
-  },
-  facebook: {
-    appId: '123456789012345',
-  },
+  }
 };
 
 const geistSans = Geist({
