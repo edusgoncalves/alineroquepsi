@@ -13,22 +13,17 @@ export const metadata: Metadata = {
     siteName: 'Dra Aline Roque - Psiquiatria Humanizada',
     images: [
       {
-        url: 'https://www.dralineroquepsiq.com.br/public/images/og-image.png', // Caminho absoluto da imagem
+        url: 'https://www.dralineroquepsiq.com.br/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Banner de destaque do Meu Site',
+        alt: 'Dra. Aline Roque - Consultas Online e Presenciais',
       },
     ],
     locale: 'pt_BR',
     type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Meu Incrível Projeto Next.js',
-    description: 'Uma descrição chamativa para o seu site.',
-    images: ['https://meusite.com.br/og-image.png'],
-  },
+  }
 };
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
