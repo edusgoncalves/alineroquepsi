@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: 'Dra Aline Roque - Psiquiatria Humanizada',
     images: [
       {
-        url: 'https://www.dralineroquepsiq.com.br/images/og-image.jpg',
+        url: 'https://www.dralineroquepsiq.com.br/images/banner.jpg',
         width: 1200,
         height: 630,
         alt: 'Dra. Aline Roque - Consultas Online e Presenciais',
