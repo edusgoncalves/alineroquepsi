@@ -5,15 +5,24 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Dra. Aline Roque | Psiquiatria e Saúde Mental',
-  description: 'Atendimento psiquiátrico humanizado e acolhedor. Consultas presenciais e online focadas no seu bem-estar emocional e equilíbrio.',
+  description: 'Atendimento psiquiátrico...',
   openGraph: {
     title: 'Dra. Aline Roque | Psiquiatria e Saúde Mental',
-    description: 'Atendimento psiquiátrico humanizado e acolhedor. Consultas presenciais e online focadas no seu bem-estar emocional e equilíbrio.',
+    description: 'Atendimento psiquiátrico...',
     url: 'https://www.dralineroquepsiq.com.br/',
     siteName: 'Dra Aline Roque - Psiquiatria Humanizada',
+    images: [
+      {
+        // Forçando a URL absoluta direta sem passar pelo otimizador do Next
+        url: 'https://www.dralineroquepsiq.com.br/images/og-image.jpg',
+        width: 1193,
+        height: 630,
+        alt: 'Dra. Aline Roque - Psiquiatria',
+      },
+    ],
     locale: 'pt_BR',
     type: 'website',
-  }
+  },
 };
 
 const geistSans = Geist({
