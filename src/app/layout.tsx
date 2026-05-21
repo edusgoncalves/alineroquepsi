@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     images: [
       {
         // Forçando a URL absoluta direta sem passar pelo otimizador do Next
-        url: 'https://www.dralineroquepsiq.com.br/images/og-image.jpg',
+        url: 'https://www.dralineroquepsiq.com.br/images/opengraph-image.jpg',
         width: 1193,
         height: 630,
         alt: 'Dra. Aline Roque - Psiquiatria',
